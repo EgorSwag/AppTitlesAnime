@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace AppTitlesAnime
 {
-    public partial class FormListTypes : Form
+    public partial class FormAddType: Form
     {
-        public FormListTypes()
+        public FormAddType()
         {
             InitializeComponent();
-        }
-
-        private void btnAddType_Click(object sender, EventArgs e)
-        {
-            FormAddType formAddType = new FormAddType();
-            formAddType.ShowDialog();
         }
     }
 }

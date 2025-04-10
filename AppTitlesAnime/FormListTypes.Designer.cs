@@ -32,11 +32,11 @@
             btnAddType = new Button();
             btnUpdateType = new Button();
             btnDeleteType = new Button();
-            dataGridView1 = new DataGridView();
-            panel1 = new Panel();
+            dataGridViewTypes = new DataGridView();
+            panelFill = new Panel();
             flowLayoutPanelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTypes).BeginInit();
+            panelFill.SuspendLayout();
             SuspendLayout();
             // 
             // flowLayoutPanelTop
@@ -62,6 +62,7 @@
             btnAddType.TabIndex = 0;
             btnAddType.Text = "Добавить";
             btnAddType.UseVisualStyleBackColor = true;
+            btnAddType.Click += btnAddType_Click;
             // 
             // btnUpdateType
             // 
@@ -83,41 +84,41 @@
             btnDeleteType.Text = "Удалить";
             btnDeleteType.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewTypes
             // 
-            dataGridView1.BackgroundColor = Color.White;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(10, 10);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(982, 416);
-            dataGridView1.TabIndex = 1;
+            dataGridViewTypes.BackgroundColor = Color.White;
+            dataGridViewTypes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewTypes.Dock = DockStyle.Fill;
+            dataGridViewTypes.Location = new Point(10, 10);
+            dataGridViewTypes.Name = "dataGridViewTypes";
+            dataGridViewTypes.Size = new Size(982, 416);
+            dataGridViewTypes.TabIndex = 1;
             // 
-            // panel1
+            // panelFill
             // 
-            panel1.Controls.Add(dataGridView1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 61);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(10);
-            panel1.Size = new Size(1002, 436);
-            panel1.TabIndex = 2;
+            panelFill.Controls.Add(dataGridViewTypes);
+            panelFill.Dock = DockStyle.Fill;
+            panelFill.Location = new Point(0, 61);
+            panelFill.Name = "panelFill";
+            panelFill.Padding = new Padding(10);
+            panelFill.Size = new Size(1002, 436);
+            panelFill.TabIndex = 2;
             // 
             // FormListTypes
             // 
             AutoScaleDimensions = new SizeF(11F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1002, 497);
-            Controls.Add(panel1);
+            Controls.Add(panelFill);
             Controls.Add(flowLayoutPanelTop);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(5);
             Name = "FormListTypes";
-            Text = "FormListTypes";
+            Text = "Список типов аниме";
             flowLayoutPanelTop.ResumeLayout(false);
             flowLayoutPanelTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTypes).EndInit();
+            panelFill.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -128,7 +129,7 @@
         private Button btnAddType;
         private Button btnUpdateType;
         private Button btnDeleteType;
-        private DataGridView dataGridView1;
-        private Panel panel1;
+        private DataGridView dataGridViewTypes;
+        private Panel panelFill;
     }
 }
